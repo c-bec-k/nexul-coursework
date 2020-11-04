@@ -1,2 +1,2 @@
 # nexul-coursework
-My coursework for Nexul ACADEMY
+My coursework for Nexul Academy
