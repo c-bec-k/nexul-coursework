@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Content</title>
+  <style>
+    h1 {
+      counter-reset: header2;
+    }
+    h2::before {
+      counter-increment: header2;
+      content: counter(header2)". ";
+    }
+    .cant-touch-this::after {
+      content: "Can't touch this!";
+    }
+    .cant-touch-this + *::after {
+      content: "Stop…HAMMER TIME!";
+    }
+  </style>
+</head>
+<body>
+  <h1>This is the Generated Content Module</h1>
+
+  <h2>There is Non-selectable Text Here</h2>
+  <p class="cant-touch-this"></p>
+  <p></p>
+  <h2>Don't Look Now, There are Numbers in My Headers!</h2>
+</body>
+</html>
