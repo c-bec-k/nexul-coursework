@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    main { margin: 1rem; }
+
+    @media (max-width: 75rem) {
+      main {
+        background-color: plum;
+      }
+    }
+    
+    @media (max-width: 56.25rem) {
+      main {
+        background-color: green;
+      }
+    }
+    @media (max-width: 37.5rem) {
+      main {
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p>Media queries?</p>
+    <p>This. Is. THE INTERNET!</p>
+  </main>
+</body>
+</html>
