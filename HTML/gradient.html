@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Fun!</title>
+  <style>
+    *, *::before, *::after {box-sizing: border-box;}
+    body { margin: 1rem; }
+    * + * { margin-top: 1rem; }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 20vh;
+      border: solid black 1px;
+    }
+    div:nth-of-type(1) {
+      background-image: radial-gradient(red, green, blue);
+    }
+    div:nth-of-type(2) {
+      background-image: linear-gradient(60deg, red, orange, yellow, green, blue, lightblue, violet);
+    }
+    div:nth-of-type(3) {
+      background-image: radial-gradient( #EE3E80, #2F2A74);
+      background-repeat: round;
+      background-size: 50px 50px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div>Evil Gradient</div>
+  <div>Rainbow Gradient</div>
+  <div>Ugly Gradient!</div>
+</body>
+</html>
