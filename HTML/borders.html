@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Pages Without Borders</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    * + * { margin-top: 1rem; }
+    main {
+      border: 2px solid green;
+      padding: 0.5rem;
+      }
+    main > p {
+      border: 1px solid black;
+    }
+    }
+    main > p:nth-of-type(even) {
+      border-radius: 1.25rem;
+      padding: 0.5em;
+    }
+    main > p:nth-of-type(odd) {
+      border-radius: 5px;
+    }
+    main > p:first-of-type {
+      width: 50%;
+      border-radius: 10% 10% 40% 40%;
+    aside {
+      width: 0;
+      height: 0;
+      border-top: transparent;
+      border-left: 1rem solid transparent;
+      border-right: 1rem solid transparent;
+      border-bottom: 2rem solid blue;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p>This is one weird-looking paragraph, isn't it?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolores omnis nulla reiciendis maxime sint, saepe minima ipsa eveniet voluptate nemo architecto hic dignissimos necessitatibus ab dolorum officia rem expedita!</p>
+    <p>Sed similique incidunt dicta culpa id doloribus voluptatibus ab placeat. Aperiam voluptas molestiae assumenda magni ad nesciunt tempora vero distinctio ipsa quaerat iste, deleniti quidem, cumque id debitis numquam voluptatem.</p>
+    <p>Corrupti praesentium vero cumque sequi debitis accusantium placeat ut eligendi voluptatem quis vel commodi cupiditate autem inventore ullam repellat, animi asperiores iste! Aspernatur perferendis laboriosam quod repudiandae quae debitis architecto!</p>
+  </main>
+  <aside></aside>
+</body>
+</html>
