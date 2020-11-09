@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using Keyframes for Fun and Profit!</title>
+  <style>
+    *, *::before, *::after {box-sizing: border-box;}
+    body {padding: 0; margin:0;}
+    main {
+      font-size: 5rem;
+      display: inline-block;
+      animation: cartwheel 8s ease-in-out 1;
+    }
+
+    @keyframes cartwheel {
+      0% {
+        transform: rotate(0);
+        transform-origin: center;
+      }
+      100% {
+        margin-left: calc(100% - 5.5rem);
+        transform: rotate(4turn);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    🤸  
+  </main>
+</body>
+</html>
