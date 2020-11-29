@@ -7,7 +7,7 @@ create table [Customer] (
 
 create table [Order] (
   OrderId int NOT NULL IDENTITY(1,1) PRIMARY KEY,
-  CustomerId varchar(100) FOREIGN KEY REFERENCES [Customer](emailAddress),
+  emailAddress varchar(100) FOREIGN KEY REFERENCES [Customer](emailAddress),
   OrderDate datetimeoffset DEFAULT GETDATE(),
   TotalPrice decimal NOT NULL,
   ItemCount int NOT NULL,
@@ -23,8 +23,8 @@ create table [Product] (
 
 create table [OrderItem] (
   orderItemId int not null IDENTITY(1,1) PRIMARY KEY,
-  [order] int not null FOREIGN KEY REFERENCES [Order](orderId),
-  productOrdered UNIQUEIDENTIFIER FOREIGN KEY REFERENCES [Product](productId),
+  orderId int not null FOREIGN KEY REFERENCES [Order](orderId),
+  productId UNIQUEIDENTIFIER FOREIGN KEY REFERENCES [Product](productId),
   productQty int not null,
   productTtl SMALLMONEY not null
 );
