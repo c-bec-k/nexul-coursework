@@ -8,6 +8,13 @@ VALUES
 INSERT INTO product
   (productname, productprice)
 VALUES
-  ('Mac Mini', '699.99'),
-  ('Lightning adaptor', '19.99'),
-  ('Magic Mouse', '99.99');
+  ('Mac Mini', 699.99),
+  ('Lightning adaptor', 19.99),
+  ('Magic Mouse', 99.99);
+  
+INSERT INTO orders
+(emailaddress, totalprice, itemcount, affiliateid)
+VALUES
+  ('k.lear@mail.you', 119.98, 2, 42),
+  ('j.oleary@email.me', 699.99, 1, null),
+  ('paulaCool@me.com', 79.96, 4, 42);
