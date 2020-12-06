@@ -1,7 +1,7 @@
 -- Write a query to select all Customers with your firstName, include all but one column in the result.
 
 SELECT firstname, lastname, emailaddress FROM customer
-  where firstname = 'Christopher';
+  where firstname = 'Paula';
 
 -- Write a query to find Customers with "Lear" anywhere in their lastName, include all columns in the result.
 
