@@ -10,8 +10,8 @@ SELECT * from customer
 
 -- Write a query to find everyone that is 25 years or older in age. Include only their first name and birth date.
 
-SELECT firstname, birthdate from customer
-  where AGE(CURRENT_DATE, birthdate) > '25 years';
+SELECT firstname, birthdate from customers
+  where EXTRACT(year from AGE(CURRENT_DATE, birthdate)) > 39;
 
 -- Write a query to search for people with an age older than 25 AND younger than 45.
 
