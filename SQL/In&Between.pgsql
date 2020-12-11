@@ -1,7 +1,7 @@
 -- Write a query to find orders greater than $10 and less than $100.
 
 SELECT * FROM orders
-  WHERE totalprice BETWEEN '10' and '100';
+  WHERE totalprice BETWEEN 10::money and 100::money;
   
 -- I had to update OrderItemID 7 from the orderitem table because I put the wrong
 -- product ID for the ordered item
